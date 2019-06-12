@@ -1,0 +1,78 @@
+/* 전체 영역을 통틀어서 스타일 정의 */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+    font-family: 'Nanum Gothic';
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bbb;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+/* 내비게이션 영역 */
+/* 배경색상 */
+.navbar-default { 
+    background-color: #000;
+    border-color: #000;
+}
+
+/* 내비게이션 제목색상 */
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+/* 내비게이션 제목에 마우스를 올렸을때 */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    background-color: transparent;
+    color: #bbb;
+}
+
+/* 현재 선택된 내비게이션 */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #000;
+}
+
+
+/* 내비게이션 글자에 마우스를 올렸을 때 */
+.navbar-default .navbar-nav > .active > li:hover,
+.navbar-default .navbar-nav > .active > li:focus {
+    color: white;
+    background-color: #bbb;
+}
+
+/* 드랍다운이 열렸을떄 마우스 색상 */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+/* 전체색상 */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+/* 해상도가 작을때 드랍다운 아이템에 마우스를 올렸을때 */
+@media(max-width: 767px) {
+    .navbar-default .navbar-nav > .open .dropdown-menu > li > a {
+        color:#fff;
+    }
+    .navbar-default .navbar-nav > .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav > .open .dropdown-menu > li > a:focus {
+        color: #bbb;
+    }
+    
+}

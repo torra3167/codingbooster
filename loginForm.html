@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>코딩 부스터</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/codingBooster.css">
+</head>
+<style type="text/css">
+.white{
+    color:#000;
+    background-color:#fff;
+}
+
+.btn-facebook {
+    color: #ffffff;
+    -webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #2b4b90;
+    *background-color: #133783;
+    background-image: -moz-linear-gradient(top, #3b5998, #133783);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3b5998), to(#133783));
+    background-image: -webkit-linear-gradient(top, #3b5998, #133783);
+    background-image: -o-linear-gradient(top, #3b5998, #133783);
+    background-image: linear-gradient(to bottom, #3b5998, #133783);
+    background-repeat: repeat-x;
+    border-color: #133783 #133783 #091b40;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3b5998', endColorstr='#ff133783', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+    .btn-facebook:hover,
+    .btn-facebook:focus,
+    .btn-facebook:active,
+    .btn-facebook.active,
+    .btn-facebook.disabled,
+    .btn-facebook[disabled] {
+        color: #ffffff;
+        background-color: #133783 !important;
+        *background-color: #102e6d !important;
+    }
+
+    .btn-facebook:active,
+    .btn-facebook.active {
+        background-color: #0d2456 \9 !important;
+    }
+</style>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">코딩 부스터</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">소개
+                            <span class="sr-only"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="instructor.html">강사진</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" data-toggle="dropdown" aria-haspopop="true" aria-expanded="flase" role="button"
+                            class="dropdown-toggle">강의
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lecture.html?lectureName=c">C언어</a></li>
+                            <li><a href="lecture.html?lectureName=java">자바</a></li>
+                            <li><a href="lecture.html?lectureName=android">안드로이드</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form action="" class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" placeholder="내용을 입력하세요." class="form-control">
+                    </div>
+                    <button class="btn btn-default" type="submit">검색</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="" data-toggle="dropdown" aria-haspopop="true" aria-expanded="flase" role="button"
+                            class="dropdown-toggle">접속하기
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="loginForm.html">로그인</a></li>
+                            <li><a href="registerForm.html">회원가입</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Login via site</h3>
+                         </div>
+                          <div class="panel-body">
+                            <form accept-charset="UTF-8" role="form">
+                            <fieldset>
+                                  <div class="form-group">
+                                    <input class="form-control" placeholder="yourmail@example.com" name="email" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me"> Remember Me
+                                    </label>
+                                </div>
+                                <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
+                            </fieldset>
+                              </form>
+                              <hr/>
+                            <center><h4>OR</h4></center>
+                            <input class="btn btn-lg btn-facebook btn-block" type="submit" value="Login via facebook">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer style="background-color: #000; color:#fff;">
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-sm-2" style="text-align: center;">
+                    <h5>Copyright &copy; 2019 장정필(Jeongpil Jang)</h5>
+
+                </div>
+                <div class="col-sm-4">
+                    <h4>대표자 소개</h4>
+                    <p>저는 코딩 부스터의 대표 장정필입니다. 잉이잉이이이이이이잉이이이이이이이이이</p>
+                </div>
+                <div class="col-sm-2">
+                    <h4 style="text-align: center;">내비게이션</h4>
+                    <div class="list-group">
+                        <a href="index.html" class="list-group-item">소개</a>
+                        <a href="instructor.html" class="list-group-item">강사진</a>
+                        <a href="lecture.html" class="list-group-item">강의</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <h4 style="text-align: center;">SNS</h4>
+                    <div class="list-group">
+                        <a href="https://www.facebook.com" class="list-group-item">페이스북</a>
+                        <a href="https://www.youtube.com" class="list-group-item">유튜브</a>
+                        <a href="https://www.naver.com" class="list-group-item">네이버</a>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <h4 style="text-align: center;">
+                        <span class="glyphicon glyphicon-ok">&nbsp;by정필</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 왜 자바스크립트가 추가되어야 부트스트랩 드롭다운이 작동할까? -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
